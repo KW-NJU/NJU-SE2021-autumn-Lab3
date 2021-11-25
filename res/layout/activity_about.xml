@@ -22,14 +22,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     android:fitsSystemWindows="true"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".AboutActivity" >
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".AboutActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -61,18 +62,29 @@
         android:gravity="center"
         android:text="@string/credits" />
 
+    <TextView
+        android:id="@+id/tvFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autoLink="web"
+        android:gravity="center"
+        android:text="When you see this sentence, it proves that the experiment has been completed!" />
+
     <Button
         android:id="@+id/btnFeedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@android:drawable/btn_default_small"
         android:drawableLeft="@drawable/ic_feedback"
         android:text="@string/feedback" />
 
     <Button
         android:id="@+id/btnPlaystore"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"      
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
         android:drawableLeft="@drawable/ic_other_apps"
         android:text="@string/other_apps" />
 
