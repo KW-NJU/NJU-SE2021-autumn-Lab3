@@ -33,7 +33,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
+import com.michaldabski.filemanager.LabActivity;
 import com.michaldabski.filemanager.R;
+import com.michaldabski.filemanager.folders.FolderActivity;
 import com.michaldabski.utils.FontApplicator;
 
 public class AboutActivity extends Activity implements OnClickListener
@@ -65,6 +67,8 @@ public class AboutActivity extends Activity implements OnClickListener
 		
 		findViewById(R.id.btnFeedback).setOnClickListener(this);
 		findViewById(R.id.btnPlaystore).setOnClickListener(this);
+		findViewById(R.id.btnInfo).setOnClickListener(this);
+		findViewById(R.id.btnBack).setOnClickListener(this);
 	}
 	
 	/**
@@ -127,7 +131,29 @@ public class AboutActivity extends Activity implements OnClickListener
 					e.printStackTrace();
 				}
 				break;
-			
+			case R.id.btnInfo:
+				try
+				{
+					Intent intent = new Intent(this, LabActivity.class);
+					startActivity(intent);
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+				break;
+
+			case R.id.btnBack:
+				try
+				{
+					Intent intent = new Intent(this, FolderActivity.class);
+					startActivity(intent);
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+				break;
 		}
 	}
 	

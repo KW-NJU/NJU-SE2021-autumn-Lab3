@@ -88,4 +88,20 @@
         android:drawableLeft="@drawable/ic_other_apps"
         android:text="@string/other_apps" />
 
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:drawableLeft="@android:drawable/ic_menu_info_details"
+        android:text="More information" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default_small"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:text="Back" />
+
 </LinearLayout>
